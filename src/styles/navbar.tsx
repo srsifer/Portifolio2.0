@@ -25,7 +25,8 @@ width: 100%;
     color: ${({ theme }) => theme.colors.gray};
     border-radius: 10px;
     :hover{
-        background-color: ${({ theme }) => theme.colors.PacificBlue};
+        background-color: rgba(35,181,211, 0.70);
+        color: white;
 
     }
   }

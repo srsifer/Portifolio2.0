@@ -1,15 +1,17 @@
-import React from 'react'
-import NavBarStyles from '../styles/navbar'
+import React from 'react';
+import NavBarStyles from '../styles/navbar';
+import Link from 'next/link';
+
 
 const NavBar = () => {
   return (
     <NavBarStyles>
       <ul>
-        <li><button>Home</button></li>
-        <li><button>Projetos</button></li>
-        <li><button>Sobre</button></li>
-        <li><button>Contatos</button></li>
-        <li><button>Github</button></li>
+        <li><Link href="/"><a><button>Home</button></a></Link> </li>
+        <li><Link href="/projects"><a><button>Projetos</button></a></Link></li>
+        <li><Link href="/about"><a><button>Sobre</button></a></Link></li>
+        <li><Link href="/contacts"><a><button>Contatos</button></a></Link></li>
+        <li><Link href="/gitHub"><a><button>Github</button></a></Link></li>
       </ul>
     </NavBarStyles>
   )
