@@ -1,9 +1,14 @@
 export default {
-    title: 'ligth',
+    title: 'dark',
 
     colors: {
-        background: '#121214',
+        background: '#071013',
         color: '#e1e1e6',
-        fontColor: '#333',
+        Black: '#333',
+        PacificBlue: '#23B5D3',
+        pewterBlue: '#75ABBC',
+        grayBlue: '#A2AEBB',
+        gray: '#DFE0E2'
+
     }
 }

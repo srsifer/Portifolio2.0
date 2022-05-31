@@ -9,7 +9,7 @@ export default createGlobalStyle`
 
  body {
      background-color: ${({ theme }) => theme.colors.background};
-     color: ${({ theme }) => theme.colors.color};
+     color: ${({ theme }) => theme.colors.gray};
      font: 400 16px Roboto, sans-serif;
  }
 `;
