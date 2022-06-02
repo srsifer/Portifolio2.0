@@ -27,7 +27,8 @@ width: 100%;
     :hover{
         background-color: rgba(35,181,211, 0.70);
         color: white;
-
+        transform: scale(1.1);
+        box-shadow: 0 10px 10px 0 black ;
     }
   }
 `;
