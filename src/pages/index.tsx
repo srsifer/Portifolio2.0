@@ -7,6 +7,8 @@ import { AnimateTolls } from '../components/home/AnimateToll';
 import { PersonalityDisclaimer } from '../styles/Pages/homeStyles/personalityDisclaimer';
 import { RecomendationDiv } from '../styles/Pages/homeStyles/Recomendations';
 import CardRecomendation from '../components/home/CardRecomendation';
+
+
 const Home: React.FC = () => {
   return (
     <>

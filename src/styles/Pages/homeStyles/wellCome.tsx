@@ -2,13 +2,15 @@ import styled, { keyframes } from "styled-components";
 
 const rise = keyframes`
   from {
-    transform: translateY(100vh);
+    transform: translateY(-100vh);
+    opacity: 0;
   }
 
   to {
-    transform: translateY(0.5vh);
+    transform: translateY(0vh);
+    opacity: 1;
   }
-`
+`;
 
 const infiniteSpinning = keyframes`
   from {
@@ -18,16 +20,7 @@ const infiniteSpinning = keyframes`
   to {
     transform: rotate(360deg);
   }
-`
-const infiniteSpinningReverse = keyframes`
-  from {
-    transform: rotate(360deg);
-  }
-
-  to {
-    transform: rotate(0deg);
-  }
-`
+`;
 
 export const WellComeDiv = styled.div`
   display: flex;
@@ -35,7 +28,7 @@ export const WellComeDiv = styled.div`
   justify-content: space-evenly;
   margin: 4em;
   max-width: 100%;
-  animation: ${rise} 0.75s ;
+  animation: ${rise} 1s ;
   height: -100vh;
   z-index: 2;
 `;
@@ -79,9 +72,9 @@ export const DevIconsAnimate = styled.div`
   }
 
   img {
-    animation: ${infiniteSpinningReverse} 20s linear infinite;
-    width: 50px;
-    height: 50px;
+    animation: ${infiniteSpinning} 20s linear infinite reverse ;
+    width: 65px;
+    height: 65px;
   }
 
   div {

@@ -1,10 +1,25 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react';
 import { RecomendationCardsDiv } from '../../styles/Pages/homeStyles/Recomendations'
 
 function CardRecomendation() {
+  const [stateAnimation, setStateAnimation] = useState(null);
+  useEffect(() => {
+    window.addEventListener('scroll', animateScroll)
+  }, [])
+
+  const animateScroll = () => {
+    if (scrollY > 150) {
+      setStateAnimation(true)
+    }
+    if (scrollY < 150) {
+      setStateAnimation(null)
+    }
+
+  }
+
   return (
     <>
-      <RecomendationCardsDiv>
+      <RecomendationCardsDiv state={stateAnimation}>
         <img src="https://media-exp1.licdn.com/dms/image/D4E35AQEdleoFGwyY_Q/profile-framedphoto-shrink_800_800/0/1632004191789?e=1654729200&v=beta&t=4_g9gpQWo_RZxxfEndK2oWZgEgtvZkHR0NsZ_cFFbzU" alt="foto colega de trabalho igor" />
         <h2>Johann Munzlinger</h2>
         <h3>Desenvolvedor Web Full Stack | Front-end | Back-end | JavaScript | React.js | Node.js</h3>
@@ -14,7 +29,7 @@ function CardRecomendation() {
         <p>e ensinar, sua contribuição fora indispensável para a conclusão desse software.</p>
         <p>Me sinto afortunado em ter atuado e assistido em sua radiante campanha pelo universo da Tecnologia da Informação!</p>
       </RecomendationCardsDiv >
-      <RecomendationCardsDiv>
+      <RecomendationCardsDiv state={stateAnimation}>
         <img src="https://media-exp1.licdn.com/dms/image/C5603AQHo0tGQOEZ6nQ/profile-displayphoto-shrink_800_800/0/1645449141813?e=1659571200&v=beta&t=EYtCvk5yYTta9Oh6peQw5d98MtTYt0sdNXMAoHGhEHU" alt="foto colega de trabalho igor" />
         <h2>Henrique Alarcon</h2>
         <h3>Analista Jr fullstack</h3>
@@ -25,7 +40,7 @@ function CardRecomendation() {
         <p>ter em um grupo, alinhado a isso tem uma excelente comunicação. Por conta de tudo isso acredito que será</p>
         <p>um profissional brilhante da área de tecnologia.</p>
       </RecomendationCardsDiv >
-      <RecomendationCardsDiv>
+      <RecomendationCardsDiv state={stateAnimation}>
         <img src="https://media-exp1.licdn.com/dms/image/C5603AQFzf6CcDp3izg/profile-displayphoto-shrink_800_800/0/1648652649687?e=1659571200&v=beta&t=URcx0P6BUnV56Js8CGQ37YTlFEPd1c2OD4pUHjUAa9A" alt="foto colega de trabalho igor" />
         <h2>Gabriel Viana</h2>
         <h3>Publicitário - PUC/SP | Desenvolvedor Web Full Stack - Trybe/Turma12 </h3>
