@@ -1,15 +1,30 @@
 import Image from 'next/image';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import NavBar from '../components/NavBar';
 
 import { WellComeDiv, WellComeTextDiv } from '../styles/Pages/homeStyles/wellCome';
 import { AnimateTolls } from '../components/home/AnimateToll';
 import { PersonalityDisclaimer } from '../styles/Pages/homeStyles/personalityDisclaimer';
-import { RecomendationDiv } from '../styles/Pages/homeStyles/Recomendations';
+import { ButtonProjecDiv, RecomendationDiv } from '../styles/Pages/homeStyles/Recomendations';
 import CardRecomendation from '../components/home/CardRecomendation';
+import Link from 'next/link';
 
 
 const Home: React.FC = () => {
+  const [stateAnimationButton, setStateAnimationButton] = useState(null);
+  useEffect(() => {
+    window.addEventListener('scroll', animateScroll)
+  }, [])
+
+  const animateScroll = () => {
+    if (scrollY > 510) {
+      setStateAnimationButton(true)
+    }
+    if (scrollY < 510) {
+      setStateAnimationButton(null)
+    }
+
+  }
   return (
     <>
       <NavBar />
@@ -30,6 +45,11 @@ const Home: React.FC = () => {
       </PersonalityDisclaimer>
       <RecomendationDiv>
         <CardRecomendation />
+
+        <ButtonProjecDiv state={stateAnimationButton}>
+          <button><Link href='/projects'><a>Meus Projetos</a></Link></button>
+        </ButtonProjecDiv>
+
       </RecomendationDiv>
     </>
   )
