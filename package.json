@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "babel": "^6.23.0",
     "babel-plugin-inline-react-svg": "^2.0.1",
     "eslint-config-prettier": "^8.5.0",
