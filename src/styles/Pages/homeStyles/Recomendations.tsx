@@ -1,57 +1,5 @@
-import styled, { keyframes } from "styled-components";
-
-const riseUp = keyframes`
-  from {
-    transform: translateY(30vh);
-    display: hidden;
-  }
-
-  to {
-    transform: translateY(0vh);
-    opacity: 1;
-  }
-  `;
-
-const fall = keyframes`
-  from {
-    transform: translateY(0vh);
-    opacity: 1;
-  }
-
-  to {
-    transform: translateY(30vh);
-    display: hidden
-  }
-  `;
-
-const vanishIn = keyframes`
-  from {
-    opacity: 0;
-    transform-origin: 50 % 50 % 0 0;
-    transform: scale(2, 2);
-    filter: blur(90px);
-  }
-to {
-  opacity: 1;
-  transform-origin: 50 % 50 % 0 0;
-  transform: scale(1, 1);
-  filter: blur(0px);
-  }
-`
-const vanishOut = keyframes`
-  0% {
-    opacity: 1;
-    transform-origin: 50% 50%;
-    transform: scale(1, 1);
-    filter: blur(0px);
-  }
-  100% {
-    opacity: 0;
-    transform-origin: 50% 50%;
-    transform: scale(2, 3);
-    filter: blur(20px);
-  }
-`
+import styled from "styled-components";
+import { fall, riseUp, vanishIn, vanishOut } from "../../animations/keyframes";
 
 export const RecomendationDiv = styled.div`
   width: 100%;
