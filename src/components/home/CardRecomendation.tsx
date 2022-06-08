@@ -14,7 +14,6 @@ function CardRecomendation() {
     if (scrollY < 150) {
       setStateAnimation(null)
     }
-
   }
 
   return (

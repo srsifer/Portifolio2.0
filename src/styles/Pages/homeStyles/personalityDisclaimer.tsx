@@ -1,17 +1,5 @@
-import styled, { keyframes } from "styled-components";
-
-
-
-const slideXToRight = keyframes`
-  from {
-    transform: translateX(-100vh);
-
-  }
-
-  to {
-    transform: translateX(0vh);
-  }
-`
+import styled from "styled-components";
+import { slideXToRight } from "../../animations/keyframes";
 
 export const PersonalityDisclaimer = styled.div`
 display: flex;

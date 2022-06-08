@@ -1,26 +1,5 @@
-import styled, { keyframes } from "styled-components";
-
-const rise = keyframes`
-  from {
-    transform: translateY(-100vh);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateY(0vh);
-    opacity: 1;
-  }
-`;
-
-const infiniteSpinning = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-`;
+import styled from "styled-components";
+import { infiniteSpinning, rise } from "../../animations/keyframes";
 
 export const WellComeDiv = styled.div`
   display: flex;
@@ -65,10 +44,10 @@ export const DevIconsAnimate = styled.div`
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: offset;
-    list-style: none;
     justify-content: space-between;
-    align-items: center;
     height: 100%;
+    align-items: center;
+    list-style: none;
   }
 
   img {

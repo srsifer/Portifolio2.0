@@ -6,5 +6,12 @@ export interface ProjectCardsProps {
     created_at: string,
     clone_url: string,
     commits_url: string,
-  }
+  },
+
+  images: {
+    blurDataURL: string,
+    height: number,
+    src: string,
+    width: number,
+  } | any
 }
