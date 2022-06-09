@@ -55,3 +55,15 @@ export const DivAnimatedTools = styled.div`
   }
 `;
 
+export const DivContentProject = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+margin: 50px;
+padding: 10px;
+border-radius: 20px;
+background-color: #242424;
+
+
+`;

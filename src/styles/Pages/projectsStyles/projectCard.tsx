@@ -1,67 +1,21 @@
 import styled from "styled-components";
 
-export const DivContentProject = styled.div`
+export const CardDiv = styled.div`
+background-color: #4a35aab5;
 display: flex;
-flex-direction: row;
-justify-content: space-between;
+flex-direction:column;
+justify-content: center;
 align-items: center;
-margin: 50px;
+width: max-content;
+height: max-content;
+margin: 10px;
 padding: 10px;
-border-radius: 20px;
-background-color: #242424;
+border-radius: 15px;
 
-
+img{
+  border-radius: 15px;
+}
 `;
-
-export const TollsIconsDiv = styled.div`
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  text-align: center;
-  img {
-    width: 50px;
-    height: 50px;
-    padding: 5px;
-    margin: 5px;
-    :hover {
-    color: ${({ theme }) => theme.colors.PacificBlue};
-    transform: scale(1.1);
-    box-shadow: 0 10px 10px 0 black ;
-    border-radius: 10px;
-    }
-  }
-  svg {
-    width: 50px;
-    height: 50px;
-    padding: 5px;
-    margin: 5px;
-    color: black;
-    :hover {
-    color: ${({ theme }) => theme.colors.PacificBlue};
-    transform: scale(1.1);
-    box-shadow: 0 10px 10px 0 black ;
-    border-radius: 10px;
-    }
-  }
-
-  h2 {
-    font-size: x-large;
-    font-weight: bolder;
-    margin: 10px;
-    padding: 10px;
-    color: ${({ theme }) => theme.colors.PacificBlue}
-  }
-`
-
-export const DescriptionProjectDiv = styled.div`
-  width: 40%;
-  padding: 10px;
-  margin: 10px;
-  font-size: 20px;
-  font-weight: bold;
-`
 
 export const DivLinguages = styled.div`
   margin: 10px;
