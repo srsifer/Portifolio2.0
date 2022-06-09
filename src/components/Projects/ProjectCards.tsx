@@ -1,19 +1,20 @@
-import Link from 'next/link'
-import React, { useEffect, useState } from 'react'
-import { getUrlCards } from '../../Services/ApiCalls'
-import { Buttons, DivLinguages } from '../../styles/Pages/projectsStyles/projectCard'
-import { CardDiv } from '../../styles/Pages/projectsStyles/projetList'
-import { ProjectCardsProps } from '../../utils/types'
-import { DiGithubBadge, DiReact } from "react-icons/di"
-import Image from 'next/image'
+import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
+import { getUrlCards } from '../../Services/ApiCalls';
+import { Buttons, DivLinguages } from '../../styles/Pages/projectsStyles/projectCard';
+import { CardDiv } from '../../styles/Pages/projectsStyles/projectCard';
+import { ProjectCardsProps } from '../../utils/types';
+import { DiGithubBadge, DiReact } from "react-icons/di";
+import Image from 'next/image';
 
 
-export const ProjectCards = ({ data }: ProjectCardsProps, { images }: ProjectCardsProps) => {
+export const ProjectCards = (props: ProjectCardsProps) => {
   const [languages, setLanguages] = useState({})
-
-  console.log(images);
+  const { data, images, deploy } = props;
 
   const { name, homepage, languages_url, clone_url } = data
+
+  console.log(homepage)
   useEffect(() => {
     const languageState = async () => {
       setLanguages(await getUrlCards(languages_url))
@@ -28,8 +29,8 @@ export const ProjectCards = ({ data }: ProjectCardsProps, { images }: ProjectCar
       <h2>{name}</h2>
       <DivLinguages>
         <Link
-          href={homepage || clone_url}
-        ><a><Buttons>Demostração <DiReact /></Buttons></a></Link>
+          href={deploy}
+        ><a target='blank'><Buttons>Demostração <DiReact /></Buttons></a></Link>
         <Link
           href={clone_url}
         >
@@ -44,15 +45,13 @@ export const ProjectCards = ({ data }: ProjectCardsProps, { images }: ProjectCar
       <DivLinguages>
         {
           Object.keys(languages).map((element) => {
-            return (<p>{element}</p>)
+            return (<p key={element}>{element}</p>)
           })
         }
       </DivLinguages>
       {
-        images ? <Image src={images.src} width={images.width} height={images.height} placeholder='blur' /> :
-          <img src={images} alt="falha na imagem" />
-
+        images.src === "" ? null : <Image src={images.src} width="400" height="250" />
       }
-    </CardDiv>
+    </CardDiv >
   )
 }
