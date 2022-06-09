@@ -1,10 +1,13 @@
 import React from 'react'
 import { ProjectCards } from './ProjectCards'
-import { DescriptionProjectDiv, DivContentProject, TollsIconsDiv } from '../../styles/Pages/projectsStyles/projectCard';
+
 import deliveryAppImage from '../../assets/deliveryapp.png';
 import feedget from '../../assets/feedget.png';
 import { SiVercel } from "react-icons/si";
 import Link from 'next/link';
+import Image from 'next/image';
+import { DivContentProject } from '../../styles/Pages/projectsStyles/ProjectPageStyle';
+import { DescriptionProjectDiv, TollsIconsDiv } from '../../styles/Pages/projectsStyles/projetList';
 
 
 export const ProjectList = ({ data }) => {
@@ -12,7 +15,7 @@ export const ProjectList = ({ data }) => {
   const WEBNlw = data.filter((name) => name.name === 'WEB-nlw')[0]
   const BlogsAPI = data.filter((name) => name.name === 'Blogs_API')[0]
   const deliveryAppBackEnd = data.filter((name) => name.name === 'deliveryAppBackEnd')[0]
-  console.log(typeof deliveryAppImage, deliveryAppImage)
+
   return (
     <div>
       <div>
@@ -29,9 +32,9 @@ export const ProjectList = ({ data }) => {
             </p>
 
             <p>
-              apos o cliente finalizar o seu pedido na tela de checkout <br />
+              após o cliente finalizar o seu pedido na tela de checkout <br />
               caberá ao vendedor controlar o status de andamento da entraga <br />
-              {'vendedor: (preparando, em trânsito ) cliente(marcar como entregue )'}
+              {'vendedor: (preparando, em trânsito); cliente: (marcar como entregue).'}
             </p>
           </DescriptionProjectDiv>
           <TollsIconsDiv>
@@ -44,20 +47,25 @@ export const ProjectList = ({ data }) => {
               <Link href="https://www.treinaweb.com.br/blog/o-que-e-redux"><a target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" /></a></Link>
             </div>
           </TollsIconsDiv>
-          <ProjectCards data={deliveryAppFrontEnd} images={deliveryAppImage} />
+          <ProjectCards data={deliveryAppFrontEnd} images={deliveryAppImage} deploy={'https://in-tregasdelivery.herokuapp.com/login'} />
         </DivContentProject>
       </div>
       <div>
         <DivContentProject>
-          <ProjectCards data={deliveryAppBackEnd} images />
+          <ProjectCards data={deliveryAppBackEnd} images={{
+            blurDataURL: "",
+            height: 0,
+            src: "",
+            width: 0,
+          }} deploy={'/'} />
           <TollsIconsDiv>
             <h2>Principais tecnologias</h2>
             <div>
-              <Link href="https://blog.back4app.com/pt/o-que-e-o-heroku/" ><a target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original-wordmark.svg" /></a></Link>
-              <Link href="https://www.alura.com.br/artigos/node-js-definicao-caracteristicas-vantagens-usos?gclid=CjwKCAjwkYGVBhArEiwA4sZLuL501Yuf6YpiszpQqIWflCzcsoWhJqMKdAUZPSD2hDvNvWwW2SNKLhoCKFIQAvD_BwE" ><a><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg" /></a></Link>
-              <Link href="https://www.treinaweb.com.br/blog/o-que-e-o-express-js" ><a target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" /></a></Link>
-              <Link href="https://blog.rocketseat.com.br/nodejs-express-sequelize/#:~:text=O%20Sequelize%20%C3%A9%20um%20ORM,e%20linhas)%20para%20objetos%20Javascript." ><a target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original-wordmark.svg" /></a></Link>
-              <Link href="https://www.hostinger.com.br/tutoriais/o-que-e-mysql" ><a target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg" /></a></Link>
+              <Link href="https://blog.back4app.com/pt/o-que-e-o-heroku/"><a target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original-wordmark.svg" /></a></Link>
+              <Link href="https://www.alura.com.br/artigos/node-js-definicao-caracteristicas-vantagens-usos?gclid=CjwKCAjwkYGVBhArEiwA4sZLuL501Yuf6YpiszpQqIWflCzcsoWhJqMKdAUZPSD2hDvNvWwW2SNKLhoCKFIQAvD_BwE"><a><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg" /></a></Link>
+              <Link href="https://www.treinaweb.com.br/blog/o-que-e-o-express-js"><a target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" /></a></Link>
+              <Link href="https://blog.rocketseat.com.br/nodejs-express-sequelize/#:~:text=O%20Sequelize%20%C3%A9%20um%20ORM,e%20linhas)%20para%20objetos%20Javascript."><a target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original-wordmark.svg" /></a></Link>
+              <Link href="https://www.hostinger.com.br/tutoriais/o-que-e-mysql"><a target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg" /></a></Link>
             </div>
           </TollsIconsDiv>
           <DescriptionProjectDiv>
@@ -100,12 +108,17 @@ export const ProjectList = ({ data }) => {
               <Link href="https://kenzie.com.br/blog/react/"><a target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" /></a></Link>
             </div>
           </TollsIconsDiv>
-          <ProjectCards data={WEBNlw} images={feedget} />
+          <ProjectCards data={WEBNlw} images={feedget} deploy={'https://web-nlw-igor-fernandes.vercel.app'} />
         </DivContentProject>
       </div>
       <div>
         <DivContentProject>
-          <ProjectCards data={BlogsAPI} images />
+          <ProjectCards data={BlogsAPI} images={{
+            blurDataURL: "",
+            height: 0,
+            src: "",
+            width: 0,
+          }} deploy={'/'} />
           <TollsIconsDiv>
             <h2>Principais tecnologias</h2>
             <div>
@@ -113,7 +126,7 @@ export const ProjectList = ({ data }) => {
               <Link href="https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript"><a target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></a></Link>
               <Link href="https://www.treinaweb.com.br/blog/o-que-e-o-express-js"><a target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" /></a></Link>
               <Link href="https://blog.rocketseat.com.br/nodejs-express-sequelize/#:~:text=O%20Sequelize%20%C3%A9%20um%20ORM,e%20linhas)%20para%20objetos%20Javascript."><a target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original-wordmark.svg" /></a></Link>
-              <Link href="https://www.hostinger.com.br/tutoriais/o-que-e-mysql"><a target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg" /></a></Link>
+              <Link href="https://www.hostinger.com.br/tutoriais/o-que-e-mysql"><a target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain-wordmark.svg" /></a></Link>
             </div>
           </TollsIconsDiv>
           <DescriptionProjectDiv>

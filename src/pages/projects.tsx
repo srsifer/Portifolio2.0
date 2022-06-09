@@ -4,7 +4,6 @@ import NavBar from '../components/NavBar'
 import { ProjectList } from '../components/Projects/ProjectList';
 import { DivAnimatedTools, DivBody, DivheaderProjects } from '../styles/Pages/projectsStyles/ProjectPageStyle';
 import { ListProductsContainer } from '../styles/Pages/projectsStyles/projetList';
-import { DiMootoolsBadge } from "react-icons/di"
 import Image from 'next/image';
 import catraca from '../assets/catraca.png'
 import ferramenta from '../assets/ferramentas.png'

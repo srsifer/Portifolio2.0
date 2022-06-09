@@ -14,4 +14,7 @@ export interface ProjectCardsProps {
     src: string,
     width: number,
   } | any
+
+  deploy: string | any
+
 }
