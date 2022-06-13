@@ -1,5 +1,19 @@
 import styled from "styled-components";
 import { infiniteSpinning, rise } from "../../animations/keyframes";
+import gif from '../../../assets/giftec.gif'
+const { src }: any = gif;
+
+export const BackgroudgifDiv = styled.div`
+  background-color: #e8f0f7;
+  background-clip: border-box;
+  background-image: url(${src});
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+padding: 10px;
+width: 100%;
+height: max-content;
+`;
 
 export const WellComeDiv = styled.div`
   display: flex;
@@ -14,6 +28,7 @@ export const WellComeDiv = styled.div`
 
 export const WellComeTextDiv = styled.div`
   display: flex;
+
   margin: 5%;
   flex-direction: column;
   justify-content: start;
@@ -23,6 +38,7 @@ export const WellComeTextDiv = styled.div`
   h1 {
     margin: 15px;
     color:  ${({ theme }) => theme.colors.PacificBlue};
+    font-size: 80px;
   }
   h3 {
     margin: 15px;
