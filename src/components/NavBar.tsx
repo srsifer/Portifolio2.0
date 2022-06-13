@@ -11,7 +11,6 @@ const NavBar = () => {
         <li><Link href="/projects"><a><button>Projetos</button></a></Link></li>
         <li><Link href="/about"><a><button>Sobre</button></a></Link></li>
         <li><Link href="/contacts"><a><button>Contatos</button></a></Link></li>
-        <li><Link href="/gitHub"><a><button>Github</button></a></Link></li>
       </ul>
     </NavBarStyles>
   )

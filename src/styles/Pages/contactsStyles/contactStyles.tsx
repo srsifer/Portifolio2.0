@@ -24,11 +24,13 @@ export const ContactsDivBody = styled.div`
  p {
       margin: 15px;
  }
+
  svg {
   width: 100px;
    height: 100px;
    border-radius: 10px;
  }
+
 `;
 
 export const ContactDivCards = styled.div`
