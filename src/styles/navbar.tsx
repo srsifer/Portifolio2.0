@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 const NavBarStyles = styled.div`
+background-color: ${({ theme }) => theme.colors.background} ;
+border-radius: 0 0px 10px 10px;
 display: flex;
 flex-direction: row;
 padding: 10px;

@@ -4,13 +4,13 @@ import { fall, riseUp, vanishIn, vanishOut } from "../../animations/keyframes";
 export const RecomendationDiv = styled.div`
   width: 100%;
   background-color: #f7f7f7;
-  margin-top: 40px;
+  padding-top: 40px;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
   height: 100vh;
   max-height: 700px;
-`
+`;
 
 interface ButtonProjectDivProps {
   state: boolean
