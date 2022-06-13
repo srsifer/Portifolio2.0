@@ -18,18 +18,22 @@ export const ContactsDivBody = styled.div`
    width: 100px;
    height: 100px;
    border-radius: 10px;
+
+ }
+
+ p {
+      margin: 15px;
  }
  svg {
   width: 100px;
    height: 100px;
    border-radius: 10px;
-
  }
 `;
+
 export const ContactDivCards = styled.div`
   background-color: #1f7fb676;
   border-radius: 15px;
-
   display:flex ;
   flex-direction: column;
   align-items: center;
@@ -43,7 +47,6 @@ export const ContactDivCards = styled.div`
     box-shadow: 0 10px 10px 0 #012235 ;
     border-radius: 10px;
     }
-
 `;
 
 export const ContactList = styled.div`
@@ -53,7 +56,6 @@ export const ContactList = styled.div`
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-
 `;
 
 export const DivIconsText = styled.div`
@@ -63,4 +65,4 @@ export const DivIconsText = styled.div`
   width: 100%;
   font-size: x-large;
   font-weight: bold;
-`
+`;
