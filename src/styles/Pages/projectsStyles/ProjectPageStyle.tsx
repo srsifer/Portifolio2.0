@@ -1,21 +1,33 @@
 import styled from "styled-components";
 import { infiniteSpinning, vanishIn } from "../../animations/keyframes";
+import gif from '../../../assets/giftec.gif'
+
 
 export const DivBody = styled.div`
 
 `;
 
+const { src }: any = gif;
 
 export const DivheaderProjects = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  background-color: #e8f0f7;
+  background-clip: border-box;
+  background-image: url(${src});
+  -webkit-text-fill-color: #00aeff8f;
+  -webkit-background-clip:text;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  animation: ${vanishIn} 1s;
   h1 {
-    font-size: 80px;
+    font-size: 150px;
     font-weight: bolder;
-    color: ${({ theme }) => theme.colors.PacificBlue};
-    animation: ${vanishIn} 1s;
+    color: aliceblue;
+
 }
 `
 
@@ -64,6 +76,4 @@ margin: 50px;
 padding: 10px;
 border-radius: 20px;
 background-color: #242424;
-
-
 `;
