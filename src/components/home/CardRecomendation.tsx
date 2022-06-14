@@ -1,5 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { RecomendationCardsDiv } from '../../styles/Pages/homeStyles/Recomendations'
+import profileJoohann from '../../assets/joohan.jpeg'
+import profilehenrrique from '../../assets/henrrique.jpeg'
+import profilegrabriel from '../../assets/gabriel.jpeg'
+
+const { src: joohann }: any = profileJoohann;
+const { src: henrrique }: any = profilehenrrique;
+const { src: gabriel }: any = profilegrabriel;
 
 function CardRecomendation() {
   const [stateAnimation, setStateAnimation] = useState(null);
@@ -19,7 +26,7 @@ function CardRecomendation() {
   return (
     <>
       <RecomendationCardsDiv state={stateAnimation}>
-        <img src="https://media-exp1.licdn.com/dms/image/D4E35AQEdleoFGwyY_Q/profile-framedphoto-shrink_800_800/0/1632004191789?e=1654729200&v=beta&t=4_g9gpQWo_RZxxfEndK2oWZgEgtvZkHR0NsZ_cFFbzU" alt="foto colega de trabalho igor" />
+        <img src={joohann} alt="foto colega de trabalho igor" />
         <h2>Johann Munzlinger</h2>
         <h3>Desenvolvedor Web Full Stack | Front-end | Back-end | JavaScript | React.js | Node.js</h3>
         <p>Igor foi um de meus parceiros no projeto que viria a nos outorgar o título de desenvolvedor full stack.</p>
@@ -29,7 +36,7 @@ function CardRecomendation() {
         <p>Me sinto afortunado em ter atuado e assistido em sua radiante campanha pelo universo da Tecnologia da Informação!</p>
       </RecomendationCardsDiv >
       <RecomendationCardsDiv state={stateAnimation}>
-        <img src="https://media-exp1.licdn.com/dms/image/C5603AQHo0tGQOEZ6nQ/profile-displayphoto-shrink_800_800/0/1645449141813?e=1659571200&v=beta&t=EYtCvk5yYTta9Oh6peQw5d98MtTYt0sdNXMAoHGhEHU" alt="foto colega de trabalho igor" />
+        <img src={henrrique} alt="foto colega de trabalho igor" />
         <h2>Henrique Alarcon</h2>
         <h3>Analista Jr fullstack</h3>
         <p>Trabalhamos juntos durante um projeto cujo objetivo era desenvolver uma aplicação de delivery no curso</p>
@@ -40,7 +47,7 @@ function CardRecomendation() {
         <p>um profissional brilhante da área de tecnologia.</p>
       </RecomendationCardsDiv >
       <RecomendationCardsDiv state={stateAnimation}>
-        <img src="https://media-exp1.licdn.com/dms/image/C5603AQFzf6CcDp3izg/profile-displayphoto-shrink_800_800/0/1648652649687?e=1659571200&v=beta&t=URcx0P6BUnV56Js8CGQ37YTlFEPd1c2OD4pUHjUAa9A" alt="foto colega de trabalho igor" />
+        <img src={gabriel} alt="foto colega de trabalho igor" />
         <h2>Gabriel Viana</h2>
         <h3>Publicitário - PUC/SP | Desenvolvedor Web Full Stack - Trybe/Turma12 </h3>
         <p>Tive o prazer de desenvolver um projeto em grupo com o Igor na Trybe. </p>

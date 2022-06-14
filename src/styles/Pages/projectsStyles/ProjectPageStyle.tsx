@@ -27,7 +27,6 @@ export const DivheaderProjects = styled.div`
     font-size: 150px;
     font-weight: bolder;
     color: aliceblue;
-
 }
 `
 
