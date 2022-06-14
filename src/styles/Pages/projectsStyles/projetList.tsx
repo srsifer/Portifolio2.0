@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ListProductsContainer = styled.div`
-  background-color: #f7f7f7;
+background-color: #121212;
   padding: 15px;
 `
 
@@ -54,4 +54,5 @@ export const DescriptionProjectDiv = styled.div`
   margin: 10px;
   font-size: 20px;
   font-weight: bold;
+
 `

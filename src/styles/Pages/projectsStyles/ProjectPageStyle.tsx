@@ -5,6 +5,7 @@ import gif from '../../../assets/giftec.gif'
 
 export const DivBody = styled.div`
 
+
 `;
 
 const { src }: any = gif;

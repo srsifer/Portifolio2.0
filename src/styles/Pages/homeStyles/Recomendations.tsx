@@ -73,10 +73,11 @@ export const RecomendationCardsDiv = styled.div<RecomendationCardsDivProps>`
   height: min-content;
   flex-direction: column;
   justify-content: center;
+
   align-items: center;
   margin: 20px;
   padding: 50px;
-  text-align: center;
+  text-align: justify;
   border-radius: 15px;
   background-color: white;
   box-shadow:  0 0 1em  10px #d3d3d3;
@@ -86,5 +87,9 @@ export const RecomendationCardsDiv = styled.div<RecomendationCardsDivProps>`
     border-radius: 50%;
   }
 
+h3 {
+  text-align: center;
+  padding-bottom: 5px;
+}
 `;
 

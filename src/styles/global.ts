@@ -11,5 +11,6 @@ export default createGlobalStyle`
      background-color: ${({ theme }) => theme.colors.background};
      color: ${({ theme }) => theme.colors.gray};
      font: 400 16px Roboto, sans-serif;
+     text-align: justify;
  }
 `;
