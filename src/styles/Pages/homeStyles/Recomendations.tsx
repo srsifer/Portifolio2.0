@@ -9,7 +9,8 @@ export const RecomendationDiv = styled.div`
   justify-content: space-evenly;
   flex-wrap: wrap;
   height: 100vh;
-  max-height: 700px;
+  min-height: max-content;
+
 `;
 
 interface ButtonProjectDivProps {
@@ -23,6 +24,9 @@ margin-bottom: 2%;
 display: flex;
 justify-content: center;
 align-items: center;
+min-width: max-content;
+min-height: max-content;
+
 a {
     color: #f7f7f7;
     text-decoration: none;
@@ -30,11 +34,15 @@ a {
     width: 100%;
     height: 100%;
     padding: 20%;
+    min-width: max-content;
+    min-height: max-content;
   }
 
 button {
-  width: 95%;
-  height: 95%;
+  width: 100%;
+  height: 100%;
+  min-height: max-content;
+  min-height: max-content;
   border-style: none;
   border-radius: 15px;
   background-color:${({ theme }) => theme.colors.PacificBlue};
@@ -59,8 +67,10 @@ export const RecomendationCardsDiv = styled.div<RecomendationCardsDivProps>`
   opacity: ${({ state }) => state === true ? 1 : 0};
   animation: ${({ state }) => state ? riseUp : fall} 2s ;
   display:flex;
-  width: 30%;
-  height: 65%;
+  min-height: 65%;
+  min-width: 30%;
+  width: min-content;
+  height: min-content;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -73,8 +83,6 @@ export const RecomendationCardsDiv = styled.div<RecomendationCardsDivProps>`
   color: ${({ theme }) => theme.colors.background};
 
   img {
-    width: 80px;
-    height: 80px;
     border-radius: 50%;
   }
 

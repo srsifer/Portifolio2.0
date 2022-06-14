@@ -3,6 +3,7 @@ import { RecomendationCardsDiv } from '../../styles/Pages/homeStyles/Recomendati
 import profileJoohann from '../../assets/joohan.jpeg'
 import profilehenrrique from '../../assets/henrrique.jpeg'
 import profilegrabriel from '../../assets/gabriel.jpeg'
+import Image from 'next/image';
 
 const { src: joohann }: any = profileJoohann;
 const { src: henrrique }: any = profilehenrrique;
@@ -26,7 +27,7 @@ function CardRecomendation() {
   return (
     <>
       <RecomendationCardsDiv state={stateAnimation}>
-        <img src={joohann} alt="foto colega de trabalho igor" />
+        <Image src={joohann} alt="foto colega de trabalho igor" width={100} height={100} />
         <h2>Johann Munzlinger</h2>
         <h3>Desenvolvedor Web Full Stack | Front-end | Back-end | JavaScript | React.js | Node.js</h3>
         <p>Igor foi um de meus parceiros no projeto que viria a nos outorgar o título de desenvolvedor full stack.</p>
@@ -36,7 +37,7 @@ function CardRecomendation() {
         <p>Me sinto afortunado em ter atuado e assistido em sua radiante campanha pelo universo da Tecnologia da Informação!</p>
       </RecomendationCardsDiv >
       <RecomendationCardsDiv state={stateAnimation}>
-        <img src={henrrique} alt="foto colega de trabalho igor" />
+        <Image src={henrrique} alt="foto colega de trabalho igor" width={100} height={100} />
         <h2>Henrique Alarcon</h2>
         <h3>Analista Jr fullstack</h3>
         <p>Trabalhamos juntos durante um projeto cujo objetivo era desenvolver uma aplicação de delivery no curso</p>
@@ -47,14 +48,13 @@ function CardRecomendation() {
         <p>um profissional brilhante da área de tecnologia.</p>
       </RecomendationCardsDiv >
       <RecomendationCardsDiv state={stateAnimation}>
-        <img src={gabriel} alt="foto colega de trabalho igor" />
+        <Image src={gabriel} alt="foto colega de trabalho igor" width={100} height={100} />
         <h2>Gabriel Viana</h2>
         <h3>Publicitário - PUC/SP | Desenvolvedor Web Full Stack - Trybe/Turma12 </h3>
         <p>Tive o prazer de desenvolver um projeto em grupo com o Igor na Trybe. </p>
         <p>Durante esse período destaco sua proatividade em buscar soluções para o desenvolvimento do projeto e</p>
         <p>sua comunicação sempre respeitosa, empática e descontraída que contribuíram muito para que o ambiente</p>
         <p>se mantivesse leve, harmonioso e divertido.</p>
-
       </RecomendationCardsDiv >
     </>
   )

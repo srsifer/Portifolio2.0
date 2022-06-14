@@ -21,19 +21,12 @@ export const ProjectList = ({ data }) => {
       <div>
         <DivContentProject>
           <DescriptionProjectDiv>
-            <p>
-              O In-tregas delivery é um aplicativos no qual simulamos <br />
-              uma destribuidora de bebidas alcolicas,tendo diversas funcionalides.
-            </p>
-
-            <p>
-              No aplicativo existem três fluxos sendo eles fluxos pessoa usuaria, <br />
-              fluxo da pessoa vendedora e fluxo da pessoa administradora <br />
-            </p>
-
-            <p>
-              após o cliente finalizar o seu pedido na tela de checkout <br />
-              caberá ao vendedor controlar o status de andamento da entraga <br />
+            <p>O In-tregas delivery é um aplicativos no qual simulamos
+              uma distribuidora de bebidas alcoólicas, tendo diversas funcionalidades.
+              No aplicativo existem três fluxos sendo eles fluxos pessoa usuária,
+              fluxo da pessoa vendedora e fluxo da pessoa administradora
+              após o cliente finalizar o seu pedido na tela de checkout
+              caberá ao vendedor controlar o status de andamento da entrega
               {'vendedor: (preparando, em trânsito); cliente: (marcar como entregue).'}
             </p>
           </DescriptionProjectDiv>
@@ -70,11 +63,10 @@ export const ProjectList = ({ data }) => {
           </TollsIconsDiv>
           <DescriptionProjectDiv>
             <p>
-              Se trata de uma API construida para servir o In-tregas Delivery
-              ultilizamos o Node.Js com a biblioteca express para a construção da mesma
-              validamos todas as entradas do JSON com a biblioteca Joi e tratamos os casos de erro com rascue
-              por fim para abistrairmos o banco de tado e suas tabelas de produtos e pedidos  fizemos o uso do
-              ORM sequelize
+              Se trata de uma API construída para servir o In-tregas Delivery utilizamos o Node.Js
+              com a biblioteca express para a construção da mesma avaliamos todas as entradas da requisição
+              em JSON com a biblioteca Joi e tratamos os casos de erro com express-rescue por fim para
+              abstrairmos o banco de tado e suas tabelas de produtos e pedidos fizemos o uso do ORM sequelize
             </p>
           </DescriptionProjectDiv>
         </DivContentProject>
@@ -83,20 +75,14 @@ export const ProjectList = ({ data }) => {
         <DivContentProject>
           <DescriptionProjectDiv>
             <p>
-              Carinhosamente Chamado de Feedget <br />
-              essa aplicação  foi desenvolvida em durante
-              o evento NLW-returns 8 da Rocketseat
-            </p>
-            <p>
-              esse projeto foi o meu ponta pé inicial para me aventurar
-              em typeScript e tabem a biblioteca de estilização taillwindCSS
-            </p>
-            <p>
-              se trata de um widget onde voce pode enviar o seu feedback
-              sobre duvidas sugestoes e relatar bugs
-              que serão notificados via email para o responsavel do site
-              vale resaltar que este aplicativo tambem tem a sua versão mobile
-              mas que não foi hospedada porem consta em meu github
+              Carinhosamente Chamado de, Feedget,
+              Essa aplicação foi desenvolvida em durante o evento NLW-returns 8 da Rocketseat.
+              esse projeto foi o meu ponta pé inicial para me aventurar em typeScript e também
+              utilizar biblioteca de estilização taillwindCSS.
+              Se trata de um widget onde você pode enviar o seu feedback sobre dúvidas,
+              sugestões e relatar bugs que serão notificados via email para o responsável do site.
+              Vale ressaltar que este aplicativo também tem a sua versão mobile mas que não foi
+              hospedada porém seu repositórios está em meu github.
             </p>
           </DescriptionProjectDiv>
           <TollsIconsDiv>
@@ -132,11 +118,10 @@ export const ProjectList = ({ data }) => {
           <DescriptionProjectDiv>
             <p>
               O blogs API foi o meu primeiro contato com ORM'S.
-              Se trata de uma API rest com altenticação ultilizando JSON WEB TOKEN
-              construido na arquitetura msc {'(model, service, controler)'}
-            </p>
-            <p>
-              essa API te possibilita fazer um CRUD {"(create, read, update, delete)"} tanto de posts quanto de Usuarios
+              Se trata de uma API rest com altenticação ultilizando
+              JSON WEB TOKEN construido na arquitetura msc {'(model, service, controler)'}
+              essa API te possibilita fazer um CRUD {"(create, read, update, delete)"}
+              tanto de posts quanto de Usuarios
             </p>
           </DescriptionProjectDiv>
         </DivContentProject>

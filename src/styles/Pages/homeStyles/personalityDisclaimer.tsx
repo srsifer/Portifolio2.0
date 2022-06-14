@@ -3,7 +3,7 @@ import { slideXToRight } from "../../animations/keyframes";
 
 export const PersonalityDisclaimer = styled.div`
 display: flex;
-width: max-content;
+width: 60%;
 margin-left: 20%;
 padding: 15px;
 flex-direction: column;

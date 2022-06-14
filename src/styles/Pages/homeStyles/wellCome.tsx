@@ -4,15 +4,16 @@ import gif from '../../../assets/giftec.gif'
 const { src }: any = gif;
 
 export const BackgroudgifDiv = styled.div`
-  background-color: #e8f0f7;
+  background-color: #000000;
   background-clip: border-box;
   background-image: url(${src});
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
-padding: 10px;
-width: 100%;
-height: max-content;
+  padding: 10px;
+  width: 100%;
+  height: max-content;
+  min-height: 100%;
 `;
 
 export const WellComeDiv = styled.div`

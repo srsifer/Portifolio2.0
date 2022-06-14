@@ -38,11 +38,12 @@ const Home: React.FC = () => {
           </WellComeTextDiv>
         </WellComeDiv>
         <PersonalityDisclaimer>
-          <p>Sou apaixonado por pessoas e tecnologia</p>
-          <p>adoro trabalhar em emquipe e o meu ponto forte é a comunicação</p>
-          <p>recentetemente me formei na Trybe onde aprendi o desenvolvimento web full-stack Javascript</p>
-          <p>tendo o React como principal framework de Front-end</p>
-          <p>e node.Js mais express e sequelizer como ferramentas de construção de API's</p>
+          <p> Um jovem programador que acredita, genuinamente, que o sucesso de uma equipe está atrelado a uma comunicação empática.
+            Fascinado por ideias que tornam mais prática a vida das pessoas, procuro por um ambiente descontraído e com forte senso
+            de responsabilidade para exercer a função de desenvolvedor web.
+            Recentemente me formei na Trybe onde aprendi o desenvolvimento web full-stack Javascript, Tendo o React como principal
+            framework de Front-end e node.Js mais express e sequelize como ferramentas de construção de API's.
+          </p>
         </PersonalityDisclaimer>
       </BackgroudgifDiv>
       <RecomendationDiv>
