@@ -36,7 +36,7 @@ class MyDocument extends Document {
         <Head>
           <meta charSet='utf-8' />
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto: 400,500,700" />
-          <link rel="icon" type="svg" sizes='32pxx32px' href="/favicon2.png" />
+          <link rel="icon" type="svg" sizes='32pxx32px' href="/favicon2.svg" />
 
         </Head>
         <body>
