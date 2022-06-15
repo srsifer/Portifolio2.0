@@ -3,47 +3,49 @@ import Document, { DocumentContext, DocumentInitialProps, Head, Html, Main, Next
 import { ServerStyleSheet } from 'styled-components';
 
 class MyDocument extends Document {
-    static async getInitialProps(
-        ctx: DocumentContext
-    ): Promise<DocumentInitialProps> {
-        const sheet = new ServerStyleSheet()
-        const originalRenderPage = ctx.renderPage
+  static async getInitialProps(
+    ctx: DocumentContext
+  ): Promise<DocumentInitialProps> {
+    const sheet = new ServerStyleSheet()
+    const originalRenderPage = ctx.renderPage
 
-        try {
-            ctx.renderPage = () =>
-                originalRenderPage({
-                    enhanceApp: (App) => (props) =>
-                        sheet.collectStyles(<App {...props} />),
-                })
+    try {
+      ctx.renderPage = () =>
+        originalRenderPage({
+          enhanceApp: (App) => (props) =>
+            sheet.collectStyles(<App {...props} />),
+        })
 
-            const initialProps = await Document.getInitialProps(ctx)
-            return {
-                ...initialProps,
-                styles: [
-                    <>
-                        {initialProps.styles}
-                        {sheet.getStyleElement()}
-                    </>,
-                ],
-            }
-        } finally {
-            sheet.seal()
-        }
+      const initialProps = await Document.getInitialProps(ctx)
+      return {
+        ...initialProps,
+        styles: [
+          <>
+            {initialProps.styles}
+            {sheet.getStyleElement()}
+          </>,
+        ],
+      }
+    } finally {
+      sheet.seal()
     }
-    render(): JSX.Element {
-        return (
-            <Html lang="pt">
-                <Head>
-                    <meta charSet='utf-8' />
-                    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto: 400,500,700" />
-                </Head>
-                <body>
-                    <Main />
-                    <NextScript />
-                </body>
-            </Html>
-        )
-    }
+  }
+  render(): JSX.Element {
+    return (
+      <Html lang="pt">
+        <Head>
+          <meta charSet='utf-8' />
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto: 400,500,700" />
+          <link rel="icon" type="svg" sizes='32pxx32px' href="/favicon2.png" />
+
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    )
+  }
 }
 
 export default MyDocument;

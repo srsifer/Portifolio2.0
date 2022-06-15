@@ -7,6 +7,7 @@ import ligth from '../styles/themes';
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
+      <title> Igor S. Fernandes</title>
       <ThemeProvider theme={ligth}>
         <GlobalStyle />
         <Component {...pageProps} />
