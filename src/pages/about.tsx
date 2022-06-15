@@ -34,19 +34,19 @@ const About = () => {
           Em 2013  ganhei minha primeira guitarra onde fiz uso de sites para aprender a tocar. Mais uma vez a tecnologia que alguém criou estava tornando meu aprendizado mais prático e sem precisar pagar por aulas
           <br />
           <br />
-          Vindo de família simples aprendi cedo a importância do trabalho
-          após 3 anos trabalhando com garçons decidi largar os estudos e abrir meu próprio negócio,
-          um bar esotérico na avenida principal de restaurantes de praia grande.
+          Vindo de família simples, aprendi desde cedo a importância do trabalho.
+          Após 3 anos trabalhando como garçom, larguei os estudos e abri meu próprio negócio,
+          um bar esotérico na avenida principal de restaurantes de Praia Grande {"(SP)"}.
           Porém me faltava visão de mercado, por falta de público esse bar não se pagou e tive que fechar em 6 meses .
           <br />
           <br />
-          meus pais se mudaram para Minas Gerais em 2018, um novo lugar e sem amigos, percebi que o tempo avançava e eu ainda não tinha terminado o ensino medio, então decidi focar nos meus estudos e me formar no EJA (Educação de Jovens e Adultos).
+          Meus pais se mudaram para Minas Gerais em 2018, um novo lugar e sem amigos, percebi que o tempo avançava e eu ainda não tinha terminado o ensino médio, então decidi focar nos meus estudos e me formar no EJA (Educação de Jovens e Adultos).
           <br />
           <br />
-          Com a chegada da pandemia em 2020, o escritório em que eu trabalhava foi fechado por corte de gastos sem ter onde trabalhar vi a obra civil como salvação. porém meu corpo não era forte o suficiente para exercer a função ali eu percebi que nunca iria ser bem sucedido igual as pessoas pra qual eu trabalhava  e de que algo a mais além do ensino médio precisava ser feito.
+          Com a chegada da pandemia em 2020, o escritório em que eu trabalhava foi fechado por corte de gastos. Sem ter onde trabalhar vi a obra civil como uma saída. porém me faltava condicionamento físico para exercer a função. Após um tempo percebi que nunca iria ser bem sucedido igual as pessoas pra qual eu trabalhava, e que algo a mais além do ensino médio precisava ser feito.
           <br />
           <br />
-          Sentindo a falta do ciclo social e cultural no qual eu cresci, retornei à Praia Grande (SP) em 2021. Onde trabalhei novamente como garçom e após trabalhar por 16 horas diárias durante os meses de Dezembro e Janeiro, cheguei a  conclusão de que estava na hora de mudar de carreira. Nesse ponto, tive como inspiração amigos que conseguiram entrar na área da tecnologia e estavam muito bem estruturados e satisfeitos com seus respectivos empregos.
+          Sentindo a falta do ciclo social e cultural no qual eu cresci, retornei à Praia Grande {"(SP)"}. em 2021. Onde trabalhei novamente como garçom e após trabalhar por 16 horas diárias durante os meses de Dezembro e Janeiro, cheguei a  conclusão de que estava na hora de mudar de carreira. Nesse ponto, tive como inspiração amigos que conseguiram entrar na área da tecnologia e estavam muito bem estruturados e satisfeitos com seus respectivos empregos.
           <br />
           <br />
           No dia do meu aniversário 05/04/2021 iniciei o curso da trybe, onde aprendi diversas tecnologias e como estruturar um bom site de maneira escalável.
