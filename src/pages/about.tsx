@@ -57,7 +57,6 @@ const About = () => {
           juntamente ao curso de inglês. Nessa jornada aprendi comigo mesmo que a minha realidade é a minha dedicação tenho alcançado hoje oque antes era apenas um sonho.
           <br />
           <br />
-
         </p>
         <h2>"O lance não é quanto tempo você tem, é como voce usa" - Ekko</h2>
         <DivImages>

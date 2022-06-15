@@ -57,7 +57,7 @@ const Contacts = () => {
         <Link href="https://www.instagram.com/sr.sifer/">
           <ContactDivCards>
             <div>
-              <h2>Instagra</h2>
+              <h2>Instagram</h2>
             </div>
             <a target="blank">
               <DivIconsText>
