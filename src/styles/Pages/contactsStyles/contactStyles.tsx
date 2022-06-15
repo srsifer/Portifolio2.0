@@ -58,6 +58,7 @@ export const ContactList = styled.div`
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  margin-top: 10%;
 `;
 
 export const DivIconsText = styled.div`
