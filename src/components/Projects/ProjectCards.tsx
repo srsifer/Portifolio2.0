@@ -14,7 +14,6 @@ export const ProjectCards = (props: ProjectCardsProps) => {
 
   const { name, homepage, languages_url, clone_url } = data
 
-  console.log(homepage)
   useEffect(() => {
     const languageState = async () => {
       setLanguages(await getUrlCards(languages_url))

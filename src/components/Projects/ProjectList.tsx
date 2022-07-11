@@ -2,12 +2,14 @@ import React from 'react'
 import { ProjectCards } from './ProjectCards'
 
 import deliveryAppImage from '../../assets/deliveryapp.png';
+import wineScreen from '../../assets/wineChalleng.png'
 import feedget from '../../assets/feedget.png';
 import { SiVercel } from "react-icons/si";
 import Link from 'next/link';
 import Image from 'next/image';
 import { DivContentProject } from '../../styles/Pages/projectsStyles/ProjectPageStyle';
 import { DescriptionProjectDiv, TollsIconsDiv } from '../../styles/Pages/projectsStyles/projetList';
+import { useFetch } from '../../utils/useFetch';
 
 
 export const ProjectList = ({ data }) => {
@@ -15,7 +17,8 @@ export const ProjectList = ({ data }) => {
   const WEBNlw = data.filter((name) => name.name === 'WEB-nlw')[0]
   const BlogsAPI = data.filter((name) => name.name === 'Blogs_API')[0]
   const deliveryAppBackEnd = data.filter((name) => name.name === 'deliveryAppBackEnd')[0]
-
+  const Wine = data.filter((id) => id.id === 508873212)[0]
+  console.log(Wine)
   return (
     <div>
       <div>
@@ -124,6 +127,32 @@ export const ProjectList = ({ data }) => {
               tanto de posts quanto de Usuarios
             </p>
           </DescriptionProjectDiv>
+
+        </DivContentProject>
+      </div>
+      <div>
+        <DivContentProject>
+        <DescriptionProjectDiv>
+            <p>
+              100% inspirado na maior plataforma e-commerce de vinhos da america latina (Wine). <br />
+              tentei replicar a UI,  você pode ver o resultado clicando em demonstração
+              E tiveram as seguintes funcionalidades implementadas:<br />
+              Catálogo de produtos com paginação <br />
+              Filtragem de produtos por preço <br />
+              Busca por nome do produto <br />
+              Adicionar e remover produtos do carrinho
+            </p>
+          </DescriptionProjectDiv>
+          <TollsIconsDiv>
+            <h2>Principais tecnologias</h2>
+            <div>
+              <Link href="https://gabrielcordeiro.dev/blog/como-fazer-deploy-na-vercel/"><a target="blank"><SiVercel /></a></Link>
+              <Link href="https://developer.mozilla.org/pt-BR/docs/Learn/JavaScript/First_steps/What_is_JavaScript"><a target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /></a></Link>
+              <Link href="https://pt.wikipedia.org/wiki/TypeScript"><a target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" /></a></Link>
+              <Link href="https://kenzie.com.br/blog/react/"><a target="blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" /></a></Link>
+            </div>
+          </TollsIconsDiv>
+          <ProjectCards data={Wine} images={wineScreen} deploy={'https://wine-iota.vercel.app/'} />
         </DivContentProject>
       </div>
     </div>
